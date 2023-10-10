@@ -1,1 +1,1 @@
-# Solar Front Website
+# Solar Energy Website

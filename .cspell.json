@@ -14,8 +14,8 @@
   ],
   "ignorePaths": [
     ".cspell.txt",
-    ".github/workflows/**",
     ".vscode/*.json",
+    ".next",
     "**/.vercel",
     "**/dist/**",
     "**/build/**",

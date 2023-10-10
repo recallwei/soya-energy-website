@@ -1,4 +1,5 @@
 clsx
+lucide
 preinstall
 superjson
 tailwindcss
