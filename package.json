@@ -11,8 +11,14 @@
     "eslint:fix": "pnpm eslint:check --fix",
     "prettier:check": "prettier --check --ignore-unknown .",
     "prettier:fix": "prettier --write --ignore-unknown .",
+    "cz": "git-cz",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   },
   "dependencies": {
     "@tanstack/react-query": "^4.36.1",
@@ -21,6 +27,7 @@
     "dayjs": "^1.11.10",
     "lucide-react": "^0.284.0",
     "next": "^13.5.4",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "superjson": "^1.13.3",
@@ -34,7 +41,9 @@
     "@types/react": "^18.2.27",
     "@types/react-dom": "^18.2.12",
     "autoprefixer": "^10.4.16",
+    "commitizen": "^4.3.0",
     "cspell": "^7.3.7",
+    "cz-git": "^1.7.1",
     "eslint": "^8.51.0",
     "eslint-config-next": "^13.5.4",
     "husky": "^8.0.3",
