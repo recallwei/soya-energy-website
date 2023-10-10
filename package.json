@@ -1,5 +1,5 @@
 {
-  "name": "solar-front-website",
+  "name": "solar-energy-website",
   "author": "Bruce Song <wenwei.song@raipiot.com>",
   "scripts": {
     "dev": "next dev",
@@ -26,9 +26,9 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
-    "@types/node": "^20.8.3",
-    "@types/react": "^18.2.25",
-    "@types/react-dom": "^18.2.11",
+    "@types/node": "^20.8.4",
+    "@types/react": "^18.2.27",
+    "@types/react-dom": "^18.2.12",
     "autoprefixer": "^10.4.16",
     "cspell": "^7.3.7",
     "eslint": "^8.51.0",
