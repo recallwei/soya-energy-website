@@ -1,3 +1,9 @@
+import { Button } from '@/ui'
+
 export default function Home() {
-  return <main></main>
+  return (
+    <main>
+      <Button>Click Me!</Button>
+    </main>
+  )
 }
