@@ -1,9 +1,9 @@
-import { Button } from '@/ui'
+import { Button } from '@/ui/Button'
 
 export default function Home() {
   return (
     <main>
-      <Button>Click Me!</Button>
+      <Button>Soya Global</Button>
     </main>
   )
 }

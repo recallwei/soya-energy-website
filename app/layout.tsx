@@ -1,13 +1,22 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
+import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+import BaseFooter from '@/components/BaseFooter'
+import { AppConfig } from '@/constants'
+import { cn } from '@/utils'
+
+import ClientInit from './ClientInit.client'
+
+const montserrat = Montserrat({ subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'Soya Energy',
-  description: 'Soya Energy'
+  description: 'Soya Energy',
+  viewport:
+    'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'
 }
 
 export default function RootLayout({
@@ -16,8 +25,20 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en-US">
+      <body
+        className={cn(
+          montserrat.className,
+          'w-screen min-h-screen scroll-smooth'
+        )}
+      >
+        <header className="flex h-14 items-center justify-center bg-[#222222] text-xl font-semibold text-white">
+          <Link href="/">{AppConfig.appName}</Link>
+        </header>
+        <div className="relative min-h-[calc(100vh-56px)]">{children}</div>
+        <BaseFooter />
+        <ClientInit />
+      </body>
     </html>
   )
 }
