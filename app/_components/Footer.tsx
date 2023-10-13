@@ -75,7 +75,7 @@ function SubFooter() {
   )
 }
 
-export default function BaseFooter() {
+export default function Footer() {
   return (
     <footer className="w-full overflow-hidden text-white">
       <div className="bg-black ">

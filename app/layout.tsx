@@ -4,11 +4,11 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Link from 'next/link'
 
-import BaseFooter from '@/app/BaseFooter'
+import Footer from '@/app/_components/Footer'
 import { AppConfig } from '@/constants'
 import { cn } from '@/utils'
 
-import ClientInit from './ClientInit.client'
+import ClientInit from './_components/ClientInit.client'
 
 const montserrat = Montserrat({ subsets: ['latin'], display: 'swap' })
 
@@ -36,7 +36,7 @@ export default function RootLayout({
           <Link href="/">{AppConfig.appName}</Link>
         </header>
         <div className="relative min-h-[calc(100vh-56px)]">{children}</div>
-        <BaseFooter />
+        <Footer />
         <ClientInit />
       </body>
     </html>
