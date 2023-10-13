@@ -1,3 +1,3 @@
-export default function Wallbox() {
+export default function Page() {
   return <>Wallbox</>
 }

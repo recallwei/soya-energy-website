@@ -1,3 +1,3 @@
-export default function HomeBattery() {
+export default function Page() {
   return <>Home Battery</>
 }

@@ -1,6 +1,6 @@
 import { Button } from '@/ui/Button'
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
       <Button>Soya Global</Button>

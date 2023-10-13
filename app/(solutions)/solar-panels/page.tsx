@@ -1,3 +1,3 @@
-export default function SolarPanels() {
+export default function Page() {
   return <>Solar Panels</>
 }

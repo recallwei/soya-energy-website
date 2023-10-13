@@ -1,3 +1,3 @@
-export default function Belgium() {
+export default function Page() {
   return <>Belgium</>
 }

@@ -1,3 +1,3 @@
-export default function SoyaEnergy() {
+export default function Page() {
   return <>Soya Energy</>
 }

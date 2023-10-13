@@ -1,3 +1,3 @@
-export default function AboutSoya() {
+export default function Page() {
   return <>About Soya</>
 }

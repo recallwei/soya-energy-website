@@ -1,3 +1,3 @@
-export default function SoyaBrain() {
+export default function Page() {
   return <>Soya Brain</>
 }

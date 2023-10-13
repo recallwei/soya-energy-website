@@ -1,3 +1,3 @@
-export default function OurApproach() {
+export default function Page() {
   return <>Our Approach</>
 }
