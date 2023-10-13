@@ -58,7 +58,7 @@ function SubFooter() {
               fill="#ffcc01"
             />
           </div>
-          <span>4.5 Rating</span>
+          <span>4.8 Rating</span>
         </div>
 
         <div

@@ -21,7 +21,7 @@ export const footerData: Record<
   countries: {
     title: 'Countries',
     children: [
-      { title: 'The Netherlands', href: '/countries/netherlands' },
+      { title: 'The Netherlands', href: '/countries/the-netherlands' },
       { title: 'Belgium', href: '/countries/belgium' },
       { title: 'South Africa', href: '/countries/south-africa' },
       { title: 'Germany', href: '/countries/germany' }
@@ -34,7 +34,7 @@ export const footerData: Record<
   about: {
     title: 'About',
     children: [
-      { title: 'About Soya', href: '/about/soya' },
+      { title: 'About Soya', href: '/about/about-soya' },
       { title: 'Our approach', href: '/about/our-approach' },
       { title: 'B-Corp', href: '/about/b-corp' },
       { title: 'Jobs', href: '/about/jobs' },

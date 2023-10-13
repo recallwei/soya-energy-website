@@ -1,3 +1,3 @@
 export default function SolarPanels() {
-  return <>SolarPanels</>
+  return <>Solar Panels</>
 }

@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Link from 'next/link'
 
-import BaseFooter from '@/components/BaseFooter'
+import BaseFooter from '@/app/BaseFooter'
 import { AppConfig } from '@/constants'
 import { cn } from '@/utils'
 

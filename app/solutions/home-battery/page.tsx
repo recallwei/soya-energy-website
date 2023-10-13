@@ -1,3 +1,3 @@
 export default function HomeBattery() {
-  return <>HomeBattery</>
+  return <>Home Battery</>
 }
