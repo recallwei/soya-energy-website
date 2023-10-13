@@ -4,11 +4,11 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Link from 'next/link'
 
-import Footer from '@/app/_components/Footer'
 import { AppConfig } from '@/constants'
 import { cn } from '@/utils'
 
-import ClientInit from './_components/ClientInit.client'
+import ClientInit from './components/ClientInit.client'
+import Footer from './components/Footer'
 
 const montserrat = Montserrat({ subsets: ['latin'], display: 'swap' })
 
