@@ -1,9 +1,9 @@
-import { Button } from '@/ui/Button'
+import Banner from './components/Banner'
 
 export default function Page() {
   return (
     <main>
-      <Button>Soya Global</Button>
+      <Banner />
     </main>
   )
 }

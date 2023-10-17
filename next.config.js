@@ -4,6 +4,16 @@ const nextConfig = {
   i18n: {
     locales: ['en-US'],
     defaultLocale: 'en-US'
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.soly-energy.com',
+        port: '',
+        pathname: '/app/uploads/**'
+      }
+    ]
   }
 }
 

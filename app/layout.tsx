@@ -2,13 +2,12 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
-import Link from 'next/link'
 
-import { AppConfig } from '@/constants'
 import { cn } from '@/utils'
 
 import ClientInit from './components/ClientInit.client'
 import Footer from './components/Footer'
+import Header from './components/Header'
 
 const montserrat = Montserrat({ subsets: ['latin'], display: 'swap' })
 
@@ -29,12 +28,10 @@ export default function RootLayout({
       <body
         className={cn(
           montserrat.className,
-          'w-screen min-h-screen scroll-smooth'
+          'w-screen min-h-screen scroll-smooth relative'
         )}
       >
-        <header className="flex h-14 items-center justify-center bg-[#222222] text-xl font-semibold text-white">
-          <Link href="/">{AppConfig.appName}</Link>
-        </header>
+        <Header />
         <div className="relative min-h-[calc(100vh-56px)]">{children}</div>
         <Footer />
         <ClientInit />

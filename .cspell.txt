@@ -3,6 +3,7 @@ clsx
 gesturestart
 lucide
 preinstall
+soly
 superjson
 tailwindcss
 tanstack
