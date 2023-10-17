@@ -1,4 +1,4 @@
-export const footerData: Record<
+export const headerNavData: Record<
   string,
   {
     title: string
@@ -8,8 +8,8 @@ export const footerData: Record<
     }[]
   }
 > = {
-  solutions: {
-    title: 'Solutions',
+  ourProducts: {
+    title: 'Our Products',
     children: [
       { title: 'Solar panels', href: '/solar-panels' },
       { title: 'Home battery', href: '/home-battery' },
@@ -28,18 +28,12 @@ export const footerData: Record<
       { title: 'United Kingdom', href: '/united-kingdom' }
     ]
   },
-  partners: {
-    title: 'Partners',
-    children: [{ title: 'Our Products', href: '/our-products' }]
-  },
   about: {
     title: 'About',
     children: [
-      { title: 'About Soya', href: '/about-soya' },
-      { title: 'Our approach', href: '/our-approach' },
-      { title: 'B-Corp', href: '/b-corp' },
-      { title: 'Jobs', href: '/jobs' },
-      { title: 'News', href: '/news' }
+      { title: 'Soya Global', href: '/about-soya' },
+      { title: 'Press', href: '/press' },
+      { title: 'Leadership Team', href: '/leadership' }
     ]
   }
 }

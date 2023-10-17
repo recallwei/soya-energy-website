@@ -69,7 +69,7 @@ export default function Banner() {
       />
 
       <div className="container">
-        <div className="flex min-h-[42.25rem] space-x-4 rounded-3xl border bg-[#ffffff40] p-10 shadow-2xl backdrop-blur-sm">
+        <div className="flex min-h-[42.25rem] space-x-4 rounded-3xl border bg-[#ffffff40] p-6 shadow-2xl backdrop-blur-sm sm:p-10">
           <div className="flex flex-col space-y-8">
             <span className="text-5xl font-bold tracking-wide lg:mt-20">
               {AppConfig.appName}
@@ -87,7 +87,7 @@ export default function Banner() {
             </p>
 
             <Button
-              className="w-fit rounded-3xl px-24 py-6 text-black opacity-100 shadow-lg transition-all active:opacity-90"
+              className="w-fit self-center rounded-3xl px-24 py-6 text-black opacity-100 shadow-lg transition-all active:opacity-90 sm:self-start"
               variant="outline"
             >
               <span className="text-lg font-semibold tracking-wide">

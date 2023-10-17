@@ -36,12 +36,7 @@ function SocialIcon(props: SocialIconProps) {
 function SubFooter() {
   return (
     <div className="bg-[#222222] py-10 text-sm">
-      <div
-        className={cn(
-          'sm:flex-row sm:space-y-0',
-          'container m-auto flex flex-col items-center justify-between space-y-8'
-        )}
-      >
+      <div className="container m-auto flex flex-col items-center justify-between space-y-8 sm:flex-row sm:space-y-0">
         <div className="flex flex-col items-center space-x-0 space-y-4 sm:flex-row sm:space-x-1 sm:space-y-0">
           <div className="flex items-center space-x-1">
             {Array.from({ length: 4 }).map((_, index) => (
@@ -61,12 +56,7 @@ function SubFooter() {
           <span>4.8 Rating</span>
         </div>
 
-        <div
-          className={cn(
-            'flex flex-col space-x-0 space-y-4',
-            'sm:flex-row sm:space-x-8 sm:space-y-0'
-          )}
-        >
+        <div className="flex flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0">
           <div>Privacy statement</div>
           <div>Cookie statement</div>
         </div>
@@ -78,7 +68,7 @@ function SubFooter() {
 export default function Footer() {
   return (
     <footer className="w-full overflow-hidden text-white">
-      <div className="bg-black ">
+      <div className="bg-black">
         <div className="container m-auto flex flex-col justify-between py-16 sm:flex-row">
           <section className="flex w-full shrink-0 flex-col items-center justify-center space-y-8 sm:w-auto sm:items-start sm:justify-between sm:space-y-0">
             <span className="text-4xl font-semibold">
@@ -145,11 +135,7 @@ export default function Footer() {
               {footerData[key]!.children.map((linkItem, linkItemIndex) => (
                 <li
                   key={linkItemIndex}
-                  className={cn(
-                    'text-sm transition-all',
-                    'hover:-translate-y-0.5 hover:translate-x-1 hover:scale-110',
-                    'active:translate-x-0 active:translate-y-0 active:scale-100'
-                  )}
+                  className="text-sm transition-all hover:-translate-y-0.5 hover:translate-x-1 hover:scale-110 active:translate-x-0 active:translate-y-0 active:scale-100"
                 >
                   <Link href={linkItem.href}>{linkItem.title}</Link>
                 </li>
@@ -164,7 +150,10 @@ export default function Footer() {
               collapsible
             >
               {Object.keys(footerData).map((key) => (
-                <AccordionItem value={key}>
+                <AccordionItem
+                  value={key}
+                  key={key}
+                >
                   <AccordionTrigger>{footerData[key]!.title}</AccordionTrigger>
                   <AccordionContent>
                     <div className="flex w-full select-none flex-col space-y-3">

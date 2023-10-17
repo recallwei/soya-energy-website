@@ -5,9 +5,10 @@ import { Montserrat } from 'next/font/google'
 
 import { cn } from '@/utils'
 
-import ClientInit from './components/ClientInit.client'
+import ClientInit from './components/ClientInit'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import { ThemeProvider } from './components/ThemeProvider'
 
 const montserrat = Montserrat({ subsets: ['latin'], display: 'swap' })
 
@@ -31,10 +32,18 @@ export default function RootLayout({
           'w-screen min-h-screen scroll-smooth relative'
         )}
       >
-        <Header />
-        <div className="relative min-h-screen">{children}</div>
-        <Footer />
-        <ClientInit />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+          storageKey="theme"
+        >
+          <Header />
+          <div className="relative min-h-screen">{children}</div>
+          <Footer />
+          <ClientInit />
+        </ThemeProvider>
       </body>
     </html>
   )
