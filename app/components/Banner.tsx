@@ -56,7 +56,7 @@ function FlagItem(flagItemProps: FlagItemProps) {
 
 export default function Banner() {
   return (
-    <section className="relative min-h-screen object-cover pb-14 pt-28 text-white">
+    <section className="relative min-h-screen pb-14 pt-28 text-white">
       <Image
         className="absolute left-0 top-0"
         src="https://www.soly-energy.com/app/uploads/2022/11/Industrie_PaneelMensen-scaled.jpg"
