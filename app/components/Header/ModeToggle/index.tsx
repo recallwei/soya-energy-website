@@ -1,9 +1,8 @@
 'use client'
 
+import { MoonIcon, SunIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { memo, useEffect, useState } from 'react'
-
-import { Icon } from '@/components/Icon'
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme()
@@ -25,7 +24,7 @@ function ThemeToggle() {
 
   if (theme === 'light') {
     return (
-      <Icon
+      <SunIcon
         name="sun"
         size="20"
         onClick={() => setTheme('dark')}
@@ -35,8 +34,7 @@ function ThemeToggle() {
   }
 
   return (
-    <Icon
-      name="moon"
+    <MoonIcon
       size="20"
       onClick={() => setTheme('light')}
       cursor="pointer"
@@ -44,5 +42,5 @@ function ThemeToggle() {
   )
 }
 
-// NOTE: Avoid re-rendering
+// NOTE: Use React memo to avoid re-rendering
 export default memo(ThemeToggle)

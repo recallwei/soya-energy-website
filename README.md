@@ -3,7 +3,6 @@
 ## Tech Stack
 
 - Core: Next.js 13, based on App router
-- UI Framework: shadcn/ui
 - CSS: TailwindCSS
 - Fonts: Google Fonts
 - API Request: Axios

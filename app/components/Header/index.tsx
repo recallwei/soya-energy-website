@@ -4,8 +4,9 @@ import { GripIcon } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
-import { AppConfig } from '@/constants'
-import { Button } from '@/ui/Button'
+import Button from '@/components/Button'
+import Dropdown from '@/components/Dropdown'
+import { AppConfig, headerNavData } from '@/constants'
 import { cn } from '@/utils'
 
 import ModeToggle from './ModeToggle'
@@ -47,7 +48,7 @@ export default function Header() {
     >
       <section className="hidden rounded-b-3xl bg-[#484848f2] sm:block">
         <div className="container flex select-none items-center justify-end space-x-4 py-2">
-          <ModeToggle />
+          {false && <ModeToggle />}
           <Link
             href="/contact"
             className="opacity-100 transition-all active:opacity-90"
@@ -74,35 +75,33 @@ export default function Header() {
               {AppConfig.appName}
             </Link>
             <div className="ml-8 hidden items-center space-x-8 sm:flex">
-              <span>Our Products</span>
-              <span>Countries</span>
-              <span>About</span>
+              {Object.keys(headerNavData).map((k) => (
+                <Dropdown
+                  key={k}
+                  text={headerNavData[k]?.title}
+                  list={headerNavData[k]?.children.map((item) => ({
+                    href: item.href,
+                    text: item.title
+                  }))}
+                />
+              ))}
             </div>
           </div>
 
           <div className="flex items-center space-x-6">
             <Link
-              className="hidden sm:block"
+              className="hidden md:block"
               href="/about-soya"
             >
               About Soya
             </Link>
+            <Button size="sm">News</Button>
             <Button
-              className="hidden rounded-3xl text-[#333333] opacity-100 transition-all active:opacity-90 sm:block"
-              variant="outline"
+              size="sm"
+              rounded
             >
-              <span className="px-4">News</span>
+              <GripIcon />
             </Button>
-            <div
-              className={cn(
-                'cursor-pointer select-none rounded-full border-2 p-1.5 opacity-100 transition-all active:opacity-80',
-                scrollDirection === 'up' && scrollDistance > 100
-                  ? 'border-black'
-                  : 'border-white'
-              )}
-            >
-              <GripIcon size="20" />
-            </div>
           </div>
         </div>
       </section>

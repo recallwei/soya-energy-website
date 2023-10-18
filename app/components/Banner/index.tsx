@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Button from '@/components/Button'
 import { AppConfig } from '@/constants'
-import { Button } from '@/ui/Button'
 
 interface FlagItemProps {
   src: string
@@ -86,14 +86,11 @@ export default function Banner() {
               already have more than 30.000 satisfied customers across 4
               countries. And we have only just begun.
             </p>
-
             <Button
-              className="w-fit self-center rounded-3xl px-24 py-6 text-black opacity-100 shadow-lg transition-all active:opacity-90 sm:self-start"
-              variant="outline"
+              inline
+              className="w-full sm:w-[300px]"
             >
-              <span className="text-lg font-semibold tracking-wide">
-                Soya Global
-              </span>
+              Soya Global
             </Button>
 
             <div className="grid select-none grid-cols-1 gap-6 font-semibold sm:grid-cols-2 sm:gap-3">

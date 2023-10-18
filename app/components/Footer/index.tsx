@@ -8,12 +8,6 @@ import {
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/Accordion'
 import { AppConfig, footerData } from '@/constants'
 import { cn } from '@/utils'
 
@@ -145,7 +139,7 @@ export default function Footer() {
 
           {/* Mobile Only */}
           <section className="mt-8 sm:hidden">
-            <Accordion
+            {/* <Accordion
               type="single"
               collapsible
             >
@@ -171,7 +165,7 @@ export default function Footer() {
                   </AccordionContent>
                 </AccordionItem>
               ))}
-            </Accordion>
+            </Accordion> */}
           </section>
         </div>
       </div>
