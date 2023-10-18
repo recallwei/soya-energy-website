@@ -6,6 +6,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "dev:turbo": "turbo dev",
+    "build:turbo": "turbo build",
+    "start:turbo": "turbo start",
     "cspell:check": "cspell \"**\"",
     "eslint:check": "eslint \"**/*.{ts,tsx,js,jsx}\" --color",
     "eslint:fix": "pnpm eslint:check --fix",
@@ -53,6 +56,7 @@
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
+    "turbo": "^1.10.15",
     "typescript": "^5.2.2"
   },
   "private": true

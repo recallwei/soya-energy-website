@@ -63,6 +63,7 @@ export default function Banner() {
         alt=""
         fill
         sizes="100vw"
+        priority
         style={{
           objectFit: 'cover'
         }}

@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import { ThemeProvider } from './components/ThemeProvider'
 
-const montserrat = Montserrat({ subsets: ['latin'], display: 'swap' })
+const montserrat = Montserrat({ subsets: ['latin'], display: 'auto' })
 
 export const metadata: Metadata = {
   title: 'Soya Energy',
