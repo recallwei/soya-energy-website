@@ -13,8 +13,21 @@ import { ThemeProvider } from './components/ThemeProvider'
 const montserrat = Montserrat({ subsets: ['latin'], display: 'auto' })
 
 export const metadata: Metadata = {
-  title: 'Soya Energy',
-  description: 'Soya Energy',
+  generator: 'Soya Energy',
+  applicationName: 'Soya Energy',
+  title: {
+    template: '%s | Soya Energy',
+    default: 'Soya Energy'
+  },
+  description: 'The utility of the future is here',
+  keywords: ['Soya Energy', 'Solar', 'Energy'],
+  authors: [
+    {
+      name: 'Bruce Song'
+    }
+  ],
+  creator: 'Bruce Song',
+  publisher: 'Bruce Song',
   viewport:
     'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'
 }
