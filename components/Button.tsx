@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from 'react'
+import { memo } from 'react'
 
 import { cn } from '@/utils'
 
@@ -15,19 +16,12 @@ interface Props
   rounded?: boolean
 }
 
-export default function Button(props: Props) {
-  const {
-    children,
-    outline,
-    inline,
-    size = 'md',
-    rounded,
-    ...buttonProps
-  } = props
+function Button(props: Props) {
+  const { children, outline, inline, size = 'md', rounded, ...rest } = props
   return (
     <button
       type="button"
-      {...buttonProps}
+      {...rest}
       className={cn(
         size === 'sm' && 'text-sm px-5 py-1.5',
         size === 'md' && 'text-base py-3 px-7',
@@ -35,10 +29,12 @@ export default function Button(props: Props) {
         inline && 'w-fit',
         rounded && 'rounded-full w-fit h-fit px-1.5',
         'active:scale-90 scale-100 text-center outline-none tracking-wide border-2 rounded-3xl transition-all shadow hover:opacity-90 opacity-100 font-semibold',
-        buttonProps.className
+        rest.className
       )}
     >
       {children}
     </button>
   )
 }
+
+export default memo(Button)

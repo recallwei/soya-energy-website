@@ -61,7 +61,7 @@ export default function Header() {
       <section
         className={cn(
           scrollDirection === 'up' && scrollDistance > 100
-            ? 'bg-white text-black'
+            ? 'bg-white text-black shadow'
             : 'text-white',
           'font-semibold'
         )}
@@ -74,7 +74,7 @@ export default function Header() {
             >
               {AppConfig.appName}
             </Link>
-            <div className="ml-8 hidden items-center space-x-8 sm:flex">
+            <div className="ml-8 hidden items-center space-x-8 md:flex">
               {Object.keys(headerNavData).map((k) => (
                 <Dropdown
                   key={k}
@@ -90,7 +90,7 @@ export default function Header() {
 
           <div className="flex items-center space-x-6">
             <Link
-              className="hidden md:block"
+              className="hidden lg:block"
               href="/about-soya"
             >
               About Soya
