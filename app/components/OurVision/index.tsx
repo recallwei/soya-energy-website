@@ -36,9 +36,9 @@ export default function OurVision() {
         {cardList.map((cardItem, cardItemIndex) => (
           <Card
             key={cardItemIndex}
-            className="sm:max-w-72 w-full"
+            className="sm:max-w-72 h-[250px] w-full"
           >
-            <div className="flex h-[200px] flex-col items-center space-y-2">
+            <div className="flex flex-col items-center space-y-2">
               <Image
                 src={cardItem.src}
                 alt=""
