@@ -2,6 +2,7 @@
 
 import { GripIcon } from 'lucide-react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import Button from '@/components/Button'
@@ -12,6 +13,8 @@ import { cn } from '@/utils'
 import ModeToggle from './ModeToggle'
 
 export default function Header() {
+  const pathname = usePathname()
+
   const [scrollDistance, setScrollDistance] = useState(0)
   const [prevScrollPosition, setPrevScrollPosition] = useState(0)
   const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up')
@@ -70,7 +73,11 @@ export default function Header() {
           <div className="flex select-none items-center">
             <Link
               href="/"
-              className="rounded-md bg-gradient-to-r from-[#333333] to-[#444444] bg-clip-text px-2 py-1 text-3xl font-bold tracking-wide text-transparent opacity-80 transition-all active:opacity-90"
+              className={cn(
+                'rounded-md bg-gradient-to-r from-[#333333] to-[#444444] bg-clip-text px-2 py-1 text-3xl font-bold tracking-wide text-transparent opacity-80 transition-all active:opacity-90',
+                pathname === '/about-soya' && 'text-white',
+                scrollDirection === 'up' && scrollDistance > 100 && 'text-black'
+              )}
             >
               {AppConfig.appName}
             </Link>

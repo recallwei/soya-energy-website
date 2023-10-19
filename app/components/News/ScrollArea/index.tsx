@@ -36,7 +36,7 @@ export default function ScrollArea() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       <div
-        className="flex snap-x snap-normal space-x-6 overflow-x-scroll scroll-smooth pb-12 pt-16"
+        className="global_hide-scrollbar flex snap-x snap-normal space-x-6 overflow-x-scroll scroll-smooth pb-12 pt-16"
         ref={scrollBarRef}
       >
         {newList.map((c) => (

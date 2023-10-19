@@ -18,7 +18,7 @@ const contentList = [
 
 export default function MissionVisionValues() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black to-[#555555] text-white">
+    <div className="min-h-[42.25rem] bg-gradient-to-r from-black to-[#555555] text-white">
       <div className="container">
         <div className="mx-auto h-fit w-[700px] pb-48 pt-20">
           <div className="text-center text-4xl font-bold tracking-wider">

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import Card from '@/components/Card'
+import GradientLine from '@/components/GradientLine'
 import HeadingText from '@/components/HeadingText'
 
 const cardList = [
@@ -71,8 +72,7 @@ export default function OurVision() {
           and commercial) and a unique online approach. And we continue to look
           for new ways to make energy supplies clean and sustainable for all.
         </p>
-
-        <hr className="mt-10 h-3 w-24 bg-gradient-to-r from-[#333333] to-white opacity-100" />
+        <GradientLine className="mt-10" />
       </div>
     </div>
   )

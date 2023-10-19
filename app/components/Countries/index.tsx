@@ -1,10 +1,11 @@
+import GradientLine from '@/components/GradientLine'
 import HeadingText from '@/components/HeadingText'
 
 import ScrollArea from './ScrollArea'
 
 export default function Countries() {
   return (
-    <div className="flex min-h-screen items-center bg-[#eeeeee]">
+    <div className="flex min-h-[55rem] items-center bg-[#eeeeee]">
       <div className="container flex">
         <div className="flex w-[500px] shrink-0 flex-col space-y-8 pe-4 pt-16">
           <HeadingText gradient>
@@ -19,7 +20,7 @@ export default function Countries() {
             to make solar energy accessible to all. Find out more about our
             country-based proposition.
           </p>
-          <hr className="mt-10 h-3 w-24 bg-gradient-to-r from-[#333333] to-white opacity-100" />
+          <GradientLine className="mt-10" />
         </div>
 
         <ScrollArea />

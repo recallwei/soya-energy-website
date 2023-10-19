@@ -1,5 +1,5 @@
 {
-  "name": "solar-energy-website",
+  "name": "soya-energy-website",
   "author": "Bruce Song <wenwei.song@raipiot.com>",
   "scripts": {
     "dev": "next dev",

@@ -90,14 +90,14 @@ export default function OurSolutions() {
     solutionList.at(0)!
   )
   return (
-    <div className="container min-h-screen py-8 sm:py-20">
+    <div className="container min-h-[42.25rem] py-8 sm:py-20">
       <div className="flex flex-col">
         <HeadingText gradient>OUR SUSTAINABLE SOLUTIONS</HeadingText>
         <span className="mt-8 text-4xl font-extrabold">
           Solar energy to all. It&#39;s possible.
         </span>
 
-        <div className="mt-20 flex min-h-[60vh] rounded-sm border border-solid">
+        <div className="mt-20 flex min-h-[42.25rem] rounded-sm border border-solid">
           <div className="shrink-0 select-none space-y-8 border-r p-8 text-xl font-semibold">
             {solutionList.map((solutionItem, solutionItemIndex) => (
               <div
