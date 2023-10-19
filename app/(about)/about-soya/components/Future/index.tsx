@@ -11,7 +11,7 @@ export function Future() {
           </span>
           <p className="leading-8">
             As much as the earth revolves around the sun, as well does
-            everything at soly revolve around the sun. We are on a mission to
+            everything at soya revolve around the sun. We are on a mission to
             make solar energy accessible to all. Which seemed like a mission
             impossible years ago, is getting closer today. And we enjoy every
             part of it. Because the sun is in fact one of the few natural
