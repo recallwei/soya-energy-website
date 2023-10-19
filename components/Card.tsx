@@ -10,10 +10,12 @@ interface Props
     >
   > {
   animated?: boolean
+  bordered?: boolean
+  shadow?: boolean
 }
 
 function Card(props: Props) {
-  const { animated = true, children, ...rest } = props
+  const { animated = true, bordered, shadow, children, ...rest } = props
 
   return (
     <div
@@ -28,6 +30,8 @@ function Card(props: Props) {
           'p-8 bg-white',
           animated &&
             'rounded-3xl group-hover:border group-hover:shadow-2xl p-[31px]',
+          bordered && 'border',
+          shadow && 'shadow',
           props.className
         )}
       >

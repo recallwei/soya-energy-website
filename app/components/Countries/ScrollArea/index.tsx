@@ -36,6 +36,7 @@ const countryList = [
     desc: "Solar energy company Soya enters the UK market. UK is on the brink of solar energy breakthrough. Let's find out."
   }
 ]
+
 export default function ScrollArea() {
   const scrollBarRef = useRef<HTMLDivElement>(null)
 
@@ -53,6 +54,8 @@ export default function ScrollArea() {
           <Card
             key={c.country}
             className="group relative h-[400px] w-[360px] snap-start p-10"
+            bordered
+            shadow
           >
             <div className="flex flex-col">
               <Image

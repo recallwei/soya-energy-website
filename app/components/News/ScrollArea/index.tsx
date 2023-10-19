@@ -25,6 +25,7 @@ const newList = [
     desc: 'Dutch solar energy company Soya will start selling dynamic energy contracts by the end of this year.'
   }
 ]
+
 export default function ScrollArea() {
   const scrollBarRef = useRef<HTMLDivElement>(null)
 
@@ -42,6 +43,8 @@ export default function ScrollArea() {
           <Card
             key={c.title}
             className="group relative h-[400px] w-[360px] snap-start p-10"
+            bordered
+            shadow
           >
             <div className="flex flex-col">
               <Image
