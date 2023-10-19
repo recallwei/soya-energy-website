@@ -11,7 +11,7 @@ export default function GradientLine(props: Props) {
     <hr
       {...rest}
       className={cn(
-        'border-t-0 h-3 w-24 bg-gradient-to-r from-[#333333] to-[#999999] opacity-100',
+        'border-t-0 h-3 w-24 bg-gradient-to-r from-[#333333] to-[#999999]',
         className
       )}
     />

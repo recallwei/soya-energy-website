@@ -80,7 +80,7 @@ export default function Header() {
               href="/"
               className={cn(
                 'rounded-md bg-gradient-to-r from-[#333333] to-[#444444] bg-clip-text px-2 py-1 text-3xl font-bold tracking-wide text-transparent opacity-80 transition-all active:opacity-90',
-                pathname === '/about-soya' && 'text-white',
+                pathname !== '/' && 'text-white',
                 scrollDirection === 'up' && scrollDistance > 100 && 'text-black'
               )}
             >
