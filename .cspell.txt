@@ -1,5 +1,7 @@
 brucesong
 clsx
+color
+extrabold
 gesturestart
 lucide
 preinstall

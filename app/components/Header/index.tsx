@@ -15,6 +15,7 @@ import ModeToggle from './ModeToggle'
 export default function Header() {
   const pathname = usePathname()
 
+  const [loaded, setLoaded] = useState(false)
   const [scrollDistance, setScrollDistance] = useState(0)
   const [prevScrollPosition, setPrevScrollPosition] = useState(0)
   const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up')
@@ -33,9 +34,13 @@ export default function Header() {
 
       setPrevScrollPosition(currentScrollPosition)
     }
+    setLoaded(true)
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [prevScrollPosition])
+  }, [prevScrollPosition, loaded])
+
+  if (!loaded) return null
 
   return (
     <header
