@@ -28,7 +28,7 @@ const checkIconSrcUrl =
 export default function OurVision() {
   return (
     <div className="container py-8 sm:py-20">
-      <div className="my-4 grid grid-cols-1 justify-between gap-4 rounded-sm border border-solid sm:grid-cols-2 md:grid-cols-4 lg:mx-20">
+      <div className="my-4 grid grid-cols-1 justify-between gap-8 rounded-sm border border-solid sm:grid-cols-2 md:grid-cols-4 lg:mx-20">
         {cardList.map((cardItem, cardItemIndex) => (
           <Card
             key={cardItemIndex}
@@ -53,13 +53,13 @@ export default function OurVision() {
         ))}
       </div>
 
-      <div className="mt-24 flex flex-col lg:mx-28">
+      <div className="mt-24 flex flex-col lg:mx-auto lg:w-[800px]">
         <HeadingText gradient>OUR VISION</HeadingText>
         <span className="mt-4 text-3xl font-extrabold">
           Solar energy accessible to all. It&#39;s possible.
         </span>
         <p className="mt-6">
-          At Soly, we make solar energy accessible to anyone who wants to
+          At Soya, we make solar energy accessible to anyone who wants to
           benefit from solar savings today and help build the sustainable world
           of tomorrow. That is why we are eager to give you advice tailored to
           your situation, and supply sustainable solar solutions with the

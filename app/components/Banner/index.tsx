@@ -9,7 +9,7 @@ interface FlagItemProps {
   country: string
 }
 
-const FlagList = [
+const flagList = [
   {
     country: 'The Netherlands',
     src: 'https://www.soly-energy.com/app/uploads/2023/03/Vlag_NL.png'
@@ -94,7 +94,7 @@ export default function Banner() {
             </Button>
 
             <div className="grid select-none grid-cols-1 gap-6 font-semibold sm:grid-cols-2 sm:gap-3">
-              {FlagList.map((f) => (
+              {flagList.map((f) => (
                 <FlagItem
                   key={f.country}
                   {...f}

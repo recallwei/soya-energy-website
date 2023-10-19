@@ -39,7 +39,7 @@ const solutionList: Solution[] = [
     subText: 'Grid independence',
     desc: [
       'The home battery is just another step of becoming more independent of the energy grid. While solar panels take up a large portion of the energy supply, the home battery will already be able to provide (almost) the full amount of power within households, escpecially on sunny days. A modern solution that we now offer in all the countries we operate.',
-      'We have called our home battery the Soly Powercell®. It’s new, it’s modulair and it’s our own way of preparing households for the sustainable future to which we look forward.'
+      'We have called our home battery the Soya Powercell®. It’s new, it’s modulair and it’s our own way of preparing households for the sustainable future to which we look forward.'
     ],
     productSrc:
       'https://www.soly-energy.com/app/uploads/2023/08/Tekengebied-1@2x.png',
@@ -59,25 +59,25 @@ const solutionList: Solution[] = [
     infoHref: '/wallbox'
   },
   {
-    text: 'Soly Brain',
+    text: 'Soya Brain',
     src: 'https://www.soly-energy.com/app/themes/international-theme/public/images/icons/Icon_Connection.58e1c4.svg',
     subText: 'Home Energy Management',
     desc: [
-      'An energy management system, also known as Home Energy Management (HEM), is an advanced energy system designed to monitor, manage and optimize a home’s energy consumption. Soly Brain® is our all-in-one home solution. It’s designed to make a fully sustainable solar system work together properly.',
-      'The rollout of the Soly Brain® is already underway and it’s going to play an important role in the future of our company, as that of our customers.'
+      'An energy management system, also known as Home Energy Management (HEM), is an advanced energy system designed to monitor, manage and optimize a home’s energy consumption. Soya Brain® is our all-in-one home solution. It’s designed to make a fully sustainable solar system work together properly.',
+      'The rollout of the Soya Brain® is already underway and it’s going to play an important role in the future of our company, as that of our customers.'
     ],
     productSrc:
       'https://www.soly-energy.com/app/uploads/2023/08/Tekengebied-3@2x.png',
     infoHref: '/soya-brain'
   },
   {
-    text: 'Soly Energy',
+    text: 'Soya Energy',
     src: 'https://www.soly-energy.com/app/themes/international-theme/public/images/icons/Icon_Statisch_Kalender.07b880.svg',
     outlineText: 'DYNAMIC USAGE',
     subText: 'Take advantage of fluctuating low market prices',
     desc: [
       'In general, the price you pay with a fixed energy contract is often higher than the purchase price because energy companies work with a ‘safety margin’. Thanks to a dynamic energy contract, we give our customers the opportunity to benefit from (often) lower prices during the day.',
-      'Dynamic energycontracts are becoming a part of the energy supply in various countries. Soly will be selling Soly Energy itself by the end of the year.'
+      'Dynamic energycontracts are becoming a part of the energy supply in various countries. Soya will be selling Soya Energy itself by the end of the year.'
     ],
     productSrc:
       'https://www.soly-energy.com/app/uploads/2023/08/Group-3101.webp',

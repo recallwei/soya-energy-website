@@ -27,7 +27,7 @@ function Card(props: Props) {
         className={cn(
           'p-8 bg-white',
           animated &&
-            'rounded-3xl group-hover:border group-hover:shadow-2xl group-hover:p-[31px]',
+            'rounded-3xl group-hover:border group-hover:shadow-2xl p-[31px]',
           props.className
         )}
       >
