@@ -63,7 +63,7 @@ export default function ScrollArea() {
           </Card>
         ))}
       </div>
-      <div className="mt-6 flex self-end">
+      <div className="mt-6 flex select-none self-end">
         <ChevronLeftIcon
           className="cursor-pointer"
           onClick={() => handleScroll(-360)}
