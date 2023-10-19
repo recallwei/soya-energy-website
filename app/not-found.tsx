@@ -11,9 +11,9 @@ export default function NotFound() {
       <span className="text-base font-medium sm:text-xl">
         We can’t find the page you are looking for.
       </span>
-      <Button>
-        <Link href="/">Back to home</Link>
-      </Button>
+      <Link href="/">
+        <Button>Back to home</Button>
+      </Link>
     </div>
   )
 }

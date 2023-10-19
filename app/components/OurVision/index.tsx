@@ -27,7 +27,10 @@ const checkIconSrcUrl =
 
 export default function OurVision() {
   return (
-    <div className="container py-8 sm:py-20">
+    <div
+      className="container py-8 sm:py-20"
+      id="our-vision"
+    >
       <div className="my-4 grid grid-cols-1 justify-between gap-8 rounded-sm border border-solid sm:grid-cols-2 md:grid-cols-4 lg:mx-20">
         {cardList.map((cardItem, cardItemIndex) => (
           <Card

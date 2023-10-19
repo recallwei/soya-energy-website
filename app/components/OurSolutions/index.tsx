@@ -140,12 +140,14 @@ export default function OurSolutions() {
                 </p>
               ))}
 
-              <Button
-                inline
-                className="absolute bottom-0 mt-20"
-              >
-                <Link href={currentSolution.infoHref}>More information</Link>
-              </Button>
+              <Link href={currentSolution.infoHref}>
+                <Button
+                  inline
+                  className="absolute bottom-0 mt-20"
+                >
+                  More information
+                </Button>
+              </Link>
             </div>
 
             <div className="w-[250px] shrink-0 self-center">

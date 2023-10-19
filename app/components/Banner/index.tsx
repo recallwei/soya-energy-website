@@ -86,12 +86,18 @@ export default function Banner() {
               already have more than 30.000 satisfied customers across 4
               countries. And we have only just begun.
             </p>
-            <Button
-              inline
-              className="w-full sm:w-[300px]"
+            {/* Consider using smooth scroll */}
+            <Link
+              href="#our-vision"
+              prefetch={false}
             >
-              Soya Global
-            </Button>
+              <Button
+                inline
+                className="w-full sm:w-[300px]"
+              >
+                Soya Global
+              </Button>
+            </Link>
 
             <div className="grid select-none grid-cols-1 gap-6 font-semibold sm:grid-cols-2 sm:gap-3">
               {flagList.map((f) => (
