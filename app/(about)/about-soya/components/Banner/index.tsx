@@ -4,7 +4,7 @@ import GradientLine from '@/components/GradientLine'
 
 export default function Banner() {
   return (
-    <section className="relative min-h-[650px] text-white">
+    <section className="relative text-white">
       <Image
         className="absolute left-0 top-0 -z-10"
         src="https://www.soly-energy.com/app/uploads/2023/02/silhouette-photo-of-man-doing-heart-sign-during-golden-hour-712520-e1588854144812-1200x800-1-1024x683-1-e1675080184697.jpg"
@@ -17,7 +17,7 @@ export default function Banner() {
         }}
       />
 
-      <div className="h-[650px] bg-gradient-to-r from-[#333333] to-transparent pb-14 pt-44">
+      <div className="h-[620px] bg-gradient-to-r from-black to-transparent pb-14 pt-44">
         <div className="container">
           <div className="flex flex-col space-y-8">
             <span className="text-4xl font-semibold">

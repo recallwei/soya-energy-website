@@ -30,7 +30,7 @@ function Card(props: Props) {
           'p-8 bg-white',
           animated &&
             'rounded-3xl group-hover:border group-hover:shadow-2xl p-[31px]',
-          bordered && 'border',
+          bordered && 'border p-[31px]',
           shadow && 'shadow',
           props.className
         )}

@@ -90,7 +90,7 @@ export default function OurSolutions() {
     solutionList.at(0)!
   )
   return (
-    <div className="container min-h-[42.25rem] py-8 sm:py-20">
+    <div className="container py-8 sm:py-20">
       <div className="flex flex-col">
         <HeadingText gradient>OUR SUSTAINABLE SOLUTIONS</HeadingText>
         <span className="mt-8 text-4xl font-extrabold">

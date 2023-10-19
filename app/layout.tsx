@@ -42,7 +42,7 @@ export default function RootLayout({
       <body
         className={cn(
           montserrat.className,
-          'w-full min-h-screen overflow-x-hidden scroll-smooth relative'
+          'w-full overflow-x-hidden scroll-smooth relative'
         )}
       >
         <ThemeProvider
