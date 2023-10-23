@@ -19,7 +19,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.0.0",
+    "@tanstack/react-query": "^5.0.5",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",
     "lucide-react": "^0.288.0",
@@ -32,22 +32,22 @@
   },
   "devDependencies": {
     "@brucesong/eslint-config-next": "^0.0.2",
-    "@commitlint/cli": "^17.8.0",
-    "@commitlint/config-conventional": "^17.8.0",
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
     "@types/node": "^20.8.7",
-    "@types/react": "^18.2.29",
+    "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
     "autoprefixer": "^10.4.16",
     "commitizen": "^4.3.0",
     "cspell": "^7.3.8",
     "cz-git": "^1.7.1",
-    "eslint": "^8.51.0",
+    "eslint": "^8.52.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
-    "turbo": "^1.10.15",
+    "turbo": "^1.10.16",
     "typescript": "^5.2.2"
   },
   "config": {
