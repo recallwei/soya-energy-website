@@ -5,6 +5,7 @@ extrabold
 gesturestart
 lucide
 preinstall
+sass
 soly
 superjson
 tailwindcss
