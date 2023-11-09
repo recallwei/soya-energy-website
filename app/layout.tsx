@@ -27,24 +27,16 @@ export const metadata: Metadata = {
     }
   ],
   creator: 'Bruce Song',
-  publisher: 'Bruce Song',
-  viewport:
-    'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'
+  publisher: 'Bruce Song'
 }
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export const viewport =
+  'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-US">
-      <body
-        className={cn(
-          montserrat.className,
-          'w-full overflow-x-hidden scroll-smooth relative'
-        )}
-      >
+      <body className={cn(montserrat.className, 'w-full overflow-x-hidden scroll-smooth relative')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
