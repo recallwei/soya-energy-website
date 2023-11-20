@@ -14,6 +14,14 @@ const nextConfig = {
         pathname: '/app/uploads/**'
       }
     ]
+  },
+  /**
+   * React PDF
+   * @see https://github.com/wojtekmaj/react-pdf/blob/main/packages/react-pdf/README.md#nextjs
+   */
+  webpack: (config) => {
+    config.resolve.alias.canvas = false
+    return config
   }
 }
 
