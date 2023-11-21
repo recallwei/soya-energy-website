@@ -32,7 +32,7 @@
     "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
-    "@brucesong/eslint-config-next": "^0.0.6",
+    "@brucesong/eslint-config-next": "^0.0.7",
     "@commitlint/cli": "^18.4.2",
     "@commitlint/config-conventional": "^18.4.2",
     "@types/node": "^20.9.2",
@@ -50,7 +50,7 @@
     "sass": "^1.69.5",
     "tailwindcss": "^3.3.5",
     "turbo": "^1.10.16",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   },
   "config": {
     "commitizen": {
