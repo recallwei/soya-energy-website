@@ -1,4 +1,4 @@
-import './globals.scss'
+import './global.scss'
 
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
